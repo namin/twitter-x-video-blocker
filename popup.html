@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 250px;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1d9bf0;
+      margin: 0;
+    }
+    
+    .subtitle {
+      font-size: 12px;
+      color: #657786;
+      margin: 5px 0 0 0;
+    }
+    
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      background: #f7f9fa;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    
+    .toggle-label {
+      font-size: 14px;
+      color: #0f1419;
+      font-weight: 500;
+    }
+    
+    .toggle-switch {
+      position: relative;
+      width: 50px;
+      height: 24px;
+      background: #cfd9de;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+    .toggle-switch.active {
+      background: #1d9bf0;
+    }
+    
+    .toggle-slider {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+      transition: transform 0.3s;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    
+    .toggle-switch.active .toggle-slider {
+      transform: translateX(26px);
+    }
+    
+    .status {
+      text-align: center;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    
+    .status.enabled {
+      background: #e8f5e8;
+      color: #0a6b0a;
+    }
+    
+    .status.disabled {
+      background: #fef2f2;
+      color: #b91c1c;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 class="title">Video Blocker</h1>
+    <p class="subtitle">for Twitter/X</p>
+  </div>
+  
+  <div class="toggle-container">
+    <span class="toggle-label">Block Videos</span>
+    <div class="toggle-switch" id="toggleSwitch">
+      <div class="toggle-slider"></div>
+    </div>
+  </div>
+  
+  <div class="status" id="status">
+    Videos are blocked
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
