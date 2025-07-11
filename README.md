@@ -1,4 +1,4 @@
-# Video Blocker for Twitter/X
+# (vibe-coded) Video Blocker for Twitter/X
 
 A Chrome extension that blocks all videos on Twitter/X with a simple toggle interface.
 
