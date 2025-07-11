@@ -81,6 +81,10 @@ This extension:
 - Try disabling and re-enabling the extension
 - Check browser console for errors
 
+## Acknowledgements
+
+Made by Claude Code (Opus 4).
+
 ## Development
 
 See [DEV.md](DEV.md) for technical documentation and development setup.
